@@ -16,7 +16,7 @@ const createElement = ({ tagName, ...rest }) => {
     }
 
     if ("children" in rest) {
-        for (let children of createBulkElement(rest.children)) element.appendChil(children)
+        for (let children of createBulkElement(rest.children)) element.appendChild(children)
     }
 
     return element

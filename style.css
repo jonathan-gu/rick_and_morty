@@ -1,4 +1,10 @@
-body {
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("src/fonts/Roboto-Regular.ttf");
+}
+
+body,
+h1 {
   margin: 0;
 }
 
@@ -11,5 +17,35 @@ nav {
 }
 
 nav img {
+  width: 200px;
+}
+
+#app div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #1ad897;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 3px #000;
+  color: #fff;
+  flex-basis: 15%;
+  height: 250px;
+  margin: 15px;
+  padding: 15px;
+  width: 200px;
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+}
+
+.card h1 {
+  font-family: "Roboto Regular";
+  font-size: 25px;
   width: 200px;
 }
