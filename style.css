@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #1ad897;
+  box-shadow: 0 0 6px 3px #000;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav img {
+  width: 200px;
+}
