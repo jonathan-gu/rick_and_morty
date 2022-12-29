@@ -1,13 +1,14 @@
 import ListCard from "../components/ListCard"
 import { getCharactersFromApi } from "../utils/Api"
 
-const PageCharacters = async () => {
-    const response = await getCharactersFromApi()
-    const data = response.map((element) => ({
+const PageCharacters = async (numberPage) => {
+    const response = await getCharactersFromApi(numberPage)
+    const characters = response.results.map((element) => ({
         nameCharacter: element.name,
         image: element.image
     }))
-    return ListCard(data)
+    const numberPages = response.info.pages
+    return ListCard(characters, numberPages, "pageCharacters")
 }
 
 export default PageCharacters

@@ -20,11 +20,18 @@ nav img {
   width: 200px;
 }
 
-#app div {
+#template {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#divCard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .card {
@@ -32,9 +39,9 @@ nav img {
   border-radius: 10px;
   box-shadow: 0 0 6px 3px #000;
   color: #fff;
-  flex-basis: 15%;
   height: 250px;
   margin: 15px;
+  /* max-width: 200px; */
   padding: 15px;
   width: 200px;
 }
@@ -47,5 +54,22 @@ nav img {
 .card h1 {
   font-family: "Roboto Regular";
   font-size: 25px;
+  width: 200px;
+}
+
+#divNumberPage {
+  box-shadow: 0 0 6px 3px #000;
+  background-color: #1ad897;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#divNumberPage select {
+  border: none;
+  box-shadow: 0 0 6px 2px #000;
+  height: 50px;
+  padding: 10px;
   width: 200px;
 }
