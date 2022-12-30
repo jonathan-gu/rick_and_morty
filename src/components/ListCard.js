@@ -4,7 +4,7 @@ import DivNumberPage from "./DivNumberPage"
 import NumberPage from "./NumberPage"
 import { tabManager } from "../../main"
 
-export default function ListCard(arrayOfElement, numberPages) {
+export default function ListCard(arrayOfElement, numberPages, numberPage) {
     const template = document.getElementById("listOfElement")
     const element = template.content.cloneNode(true)
 
@@ -22,12 +22,11 @@ export default function ListCard(arrayOfElement, numberPages) {
         const page = {
             numberPage: i
         }
-        const numberPage = NumberPage(page)
-        divNumberPage.querySelector("select").appendChild(numberPage)
-        numberPage.addEventListener("change", () => {
-            console.log(1)
-            tabManager.openTabById("pageCharacters", numberPage.getAttribute("data-tabId"))
-        })
+        const numberPageComponent = NumberPage(page)
+        if (i == numberPage) {
+            numberPageComponent.setAttribute("selected", "")
+        }
+        divNumberPage.querySelector("select").appendChild(numberPageComponent)
     }
 
     divNumberPage.querySelector("select").addEventListener("change", () => {

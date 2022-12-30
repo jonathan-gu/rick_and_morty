@@ -8,7 +8,7 @@ const NumberPage = ({ numberPage, tagName = "option" } = {}) => createElement(
         ],
         text: numberPage,
         attributes: {
-            "data-tabId": numberPage
+            "data-tabId": numberPage,
         }
     }
 )
