@@ -20,6 +20,44 @@ nav img {
   width: 200px;
 }
 
+#divForm {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #1ad897;
+  box-shadow: 0 0 6px 3px #000;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  padding: 10px 0;
+  width: 500px;
+}
+
+input {
+  border: none;
+
+  margin: 0 10px;
+
+}
+
+#searchValue {
+  font-size: 20px;
+  height: 40px;
+  padding: 5px 20px;
+  width: 160px;
+}
+
+#searchValidate {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  padding: 0;
+  width: 200px;
+}
+
 #template {
   width: 100%;
   display: flex;
@@ -31,7 +69,7 @@ nav img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -39,22 +77,21 @@ nav img {
   border-radius: 10px;
   box-shadow: 0 0 6px 3px #000;
   color: #fff;
-  height: 250px;
+  height: 140px;
   margin: 15px;
-  /* max-width: 200px; */
   padding: 15px;
-  width: 200px;
+  width: 90px;
 }
 
 .card img {
-  height: 200px;
-  width: 200px;
+  height: 90px;
+  width: 90px;
 }
 
 .card h1 {
   font-family: "Roboto Regular";
-  font-size: 25px;
-  width: 200px;
+  font-size: 16px;
+  width: 90px;
 }
 
 #divNumberPage {

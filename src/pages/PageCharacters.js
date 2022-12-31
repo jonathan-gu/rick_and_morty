@@ -8,7 +8,7 @@ const PageCharacters = async (numberPage = 1) => {
         image: element.image
     }))
     const numberPages = response.info.pages
-    return ListCard(characters, numberPages, numberPage, "pageCharacters")
+    return ListCard(characters, numberPages, numberPage)
 }
 
 export default PageCharacters
