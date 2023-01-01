@@ -4,6 +4,7 @@ import { getCharactersFromApi } from "../utils/Api"
 const PageCharacters = async (numberPage = 1) => {
     const response = await getCharactersFromApi(numberPage)
     const characters = response.results.map((element) => ({
+        id: element.id,
         nameCharacter: element.name,
         image: element.image
     }))

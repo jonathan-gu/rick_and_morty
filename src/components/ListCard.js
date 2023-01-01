@@ -15,7 +15,11 @@ export default function ListCard(arrayOfElement, numberPages, numberPage, inputV
     element.querySelector("div").appendChild(divNumberPage)
 
     arrayOfElement.forEach(cardData => {
-        divCard.appendChild(Card(cardData))
+        const card = Card(cardData)
+        divCard.appendChild(card)
+        card.addEventListener("click", () => {
+            tabManager.openTabById("pageCharacter", card.id)
+        })
     })
 
     for (let i = 1; i <= numberPages; i++) {

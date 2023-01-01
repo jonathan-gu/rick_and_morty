@@ -4,8 +4,13 @@
 }
 
 body,
-h1 {
+h1,
+p {
   margin: 0;
+}
+
+body {
+  font-family: "Roboto Regular";
 }
 
 nav {
@@ -16,7 +21,7 @@ nav {
   padding: 15px 0;
 }
 
-nav img {
+#logo {
   width: 200px;
 }
 
@@ -41,7 +46,6 @@ input {
   height: 40px;
   padding: 5px 20px;
   width: 160px;
-  /* margin: 0 10px; */
 }
 
 #template {
@@ -75,7 +79,6 @@ input {
 }
 
 .card h1 {
-  font-family: "Roboto Regular";
   font-size: 16px;
   width: 150px;
 }
@@ -95,4 +98,36 @@ input {
   height: 50px;
   padding: 10px;
   width: 200px;
+}
+
+#character {
+  background-color: #1ad897;
+  box-shadow: 0 0 6px 3px #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 400px;
+}
+
+#character img,
+#character h1,
+#character p {
+  width: 200px;
+}
+
+#character img {
+  margin: 20px auto;
+}
+
+#character h1 {
+  font-size: 25px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#character p {
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 2px;
 }

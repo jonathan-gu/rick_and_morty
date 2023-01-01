@@ -1,11 +1,14 @@
 import createElement from "../utils/createElement"
 
-const Card = ({ nameCharacter, image, tagName = "div" } = {}) => createElement(
+const Card = ({ id, nameCharacter, image, tagName = "div" } = {}) => createElement(
     {
         tagName,
         classList: [
             "card"
         ],
+        attributes: {
+            id: id
+        },
         children: [
             {
                 tagName: "img",

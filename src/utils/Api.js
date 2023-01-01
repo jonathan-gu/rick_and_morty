@@ -11,3 +11,10 @@ export const getCharactersSearchFromApi = async (valueSearch, numberPage) => {
 
     return response
 }
+
+export const getCharacterFromApi = async (id) => {
+    const request = await fetch("https://rickandmortyapi.com/api/character/" + id)
+    const response = await request.json()
+
+    return response
+}
