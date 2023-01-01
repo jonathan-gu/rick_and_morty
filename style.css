@@ -32,30 +32,16 @@ form {
   justify-content: center;
   margin: 25px;
   padding: 10px 0;
-  width: 500px;
+  width: 300px;
 }
 
 input {
   border: none;
-
-  margin: 0 10px;
-
-}
-
-#searchValue {
   font-size: 20px;
   height: 40px;
   padding: 5px 20px;
   width: 160px;
-}
-
-#searchValidate {
-  background-color: #000;
-  color: #fff;
-  font-size: 20px;
-  height: 50px;
-  padding: 0;
-  width: 200px;
+  /* margin: 0 10px; */
 }
 
 #template {
@@ -77,21 +63,21 @@ input {
   border-radius: 10px;
   box-shadow: 0 0 6px 3px #000;
   color: #fff;
-  height: 140px;
+  height: 200px;
   margin: 15px;
   padding: 15px;
-  width: 90px;
+  width: 150px;
 }
 
 .card img {
-  height: 90px;
-  width: 90px;
+  height: 150px;
+  width: 150px;
 }
 
 .card h1 {
   font-family: "Roboto Regular";
   font-size: 16px;
-  width: 90px;
+  width: 150px;
 }
 
 #divNumberPage {

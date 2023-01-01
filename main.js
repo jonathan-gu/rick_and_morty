@@ -4,7 +4,7 @@ import TabManager from "./src/utils/TabManager"
 
 const rootElement = document.getElementById("app")
 const form = document.querySelector("form")
-const searchValue = document.getElementById("searchValue")
+const input = document.querySelector("input")
 
 export const tabManager = new TabManager(rootElement, {
     pageCharacters: {
@@ -19,5 +19,5 @@ tabManager.openTabById("pageCharacters")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
-    tabManager.openTabById("pageCharactersSearch", { searchValue: searchValue.value })
+    tabManager.openTabById("pageCharactersSearch", { inputValue: input.value })
 })
