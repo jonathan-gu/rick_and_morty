@@ -3,7 +3,6 @@ import { getCharacterFromApi } from "../utils/Api"
 
 const PageCharacter = async (idCharacter) => {
     const response = await getCharacterFromApi(idCharacter)
-    console.log(response)
     const character = {
         name: response.name,
         image: response.image,
@@ -11,7 +10,6 @@ const PageCharacter = async (idCharacter) => {
         species: response.species,
         gender: response.gender,
     }
-    console.log(character)
     return Character(character)
 }
 
